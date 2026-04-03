@@ -81,8 +81,9 @@ dependencies {
     implementation("androidx.media3:media3-session:1.2.0")
     implementation("androidx.media3:media3-common:1.2.0")
 
-    // Telegram TDLib (via tdlight-java)
-    implementation("com.github.AhmadNar662:tdlight-java:1.0.0")
+    // Telegram API - 暂时使用模拟实现
+    // 实际项目需要配置 TDLib
+    // implementation("org.drinkless:tdlib:1.8.6")
 
     // Kotlin Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
