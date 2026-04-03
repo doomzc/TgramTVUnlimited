@@ -1,19 +1,13 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
+plugins {
+    kotlin("jvm") version "1.5.30"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.5.30"
 }
 
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven { url = uri("https://jitpack.io") }
-    }
+repositories {
+    google()
+    mavenCentral()
 }
 
-rootProject.name = "TgramTVUnlimited"
-include(":app")
+dependencies {
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
+}
